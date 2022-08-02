@@ -18,9 +18,9 @@ Projeto para assuntos relacionados ao estudo na DIO.
  - [Criando seu Primeiro Repositório no GitHub Para Compartilhar Seu Progresso](https://github.com/JoaoLagos/dio/blob/main/certificados/criando-seu-primeiro-repositorio-no-github.pdf) - Duração: 1 Hora
 <br><br>
  - LINUX:
-     - [Introdução ao Sistema Operacional Linux]() - Duração: 1 Hora
-     - [Instalando o Linux]() - Duração: 1 Hora
-     - [Acesso Remoto a máquinas Linux]() - Duração: 1 Hora
+     - [Introdução ao Sistema Operacional Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/introducao-ao-sistema-operacional-linux.pdf) - Duração: 1 Hora
+     - [Instalando o Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/instalando-o-linux.pdf) - Duração: 2 Hora
+     - [Acesso Remoto a máquinas Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/acesso-remoto-a-m%C3%A1quinas-linux.pdf) - Duração: 1 Hora
  
 
 <hr>
