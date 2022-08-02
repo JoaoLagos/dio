@@ -11,6 +11,10 @@ Projeto para assuntos relacionados ao estudo na DIO.
 
 ## Certificados:
 
-    EM BREVE!!!
+ - [Conheça as oportunidades da DIO](certificados\conheca-as-oportunidades-da-dio.pdf) - Duração: 1 hora
+ - [Seja protagonista neste Bootcamp]() - Duração: 1 hora
+ - [Introdução ao Desenvolvimento Moderno de Software]() - Duração: 1 hora
+ - [Introdução ao Git e ao Github]() - Duração: 5 horas
+ - [Criando seu Primeiro Repositório no GitHub Para Compartilhar Seu Progresso]() - Duração: 1 hora
 
 <hr>
