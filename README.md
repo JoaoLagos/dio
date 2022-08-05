@@ -19,8 +19,9 @@ Projeto para assuntos relacionados ao estudo na DIO.
 <br><br>
  - LINUX:
      - [Introdução ao Sistema Operacional Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/introducao-ao-sistema-operacional-linux.pdf) - Duração: 1 Hora
-     - [Instalando o Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/instalando-o-linux.pdf) - Duração: 2 Hora
+     - [Instalando o Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/instalando-o-linux.pdf) - Duração: 2 Horas
      - [Acesso Remoto a máquinas Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/acesso-remoto-a-m%C3%A1quinas-linux.pdf) - Duração: 1 Hora
+     - [Manipulando Arquivos no Linux](/certificados/Linux/manipulando-arquivos-no-linux.pdf) - Duração: 3 Horas
  
 
 <hr>
