@@ -25,7 +25,11 @@ Projeto para assuntos relacionados ao estudo na DIO.
      - [Gerenciando Usuários no Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/gerenciando-usuarios-no-linux.pdf) - Duração: 2 Horas
      - [Gerenciamento de Pacotes Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/gerenciamento-de-pacotes-linux.pdf) - Duração: 1 Hora
      - [Gerenciamento de Discos Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/gerenciamento-de-discos-linux.pdf) - Duração: 1 Hora
-     a
+     - [Copiando Arquivos e Manipulando Processos](https://github.com/JoaoLagos/dio/blob/main/certificados\Linux/copiando-arquivos-e-manipulando-processos.pdf) Duração: 1 Hora
+     - [Infraestrutura como Código: Script de Criação de Estrutura de Usuários, Diretórios e Permissões](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/infraestrutura-como-codigo-script-de-criacao-de-estrutura-de-usuarios-diretorios-e-permissoes.pdf) Duração: 1 Hora | <a href="">Link para o projeto</a> |
+     - [Servidores de Arquivos com Linux](https://github.com/JoaoLagos/dio/blob/main/certificados\Linux\servidores-de-arquivos-com-linux.pdf) Duração: 1 Hora
+     - [Criando um Servidor Web com Linux](https://github.com/JoaoLagos/dio/blob/main/certificados\Linux\criando-um-servidor-web-com-linux.pdf) Duração: 1 Hora
+     - [Servidor de Banco de Dados com Linux](https://github.com/JoaoLagos/dio/blob/main/certificados\Linux\servidor-de-banco-de-dados-com-linux.pdf) Duração: 1 Hora
  
 
 <hr>
