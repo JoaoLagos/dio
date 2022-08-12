@@ -25,6 +25,7 @@ Projeto para assuntos relacionados ao estudo na DIO.
      - [Gerenciando Usuários no Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/gerenciando-usuarios-no-linux.pdf) - Duração: 2 Horas
      - [Gerenciamento de Pacotes Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/gerenciamento-de-pacotes-linux.pdf) - Duração: 1 Hora
      - [Gerenciamento de Discos Linux](https://github.com/JoaoLagos/dio/blob/main/certificados/Linux/gerenciamento-de-discos-linux.pdf) - Duração: 1 Hora
+     a
  
 
 <hr>
