@@ -74,7 +74,13 @@ def extrato():
     Saída:
     None
     """
+
+    print("SAQUE".center(50," "))
+    print("")
     
+    if len(lista_extrato)==0:
+        print("\nNão houve movimentações em sua conta bancária.\n")
+
     for item in lista_extrato:
         if item<0: # Saque
             print(f"\033[0;31mC: R${abs(item):.2f}\033[0m")
