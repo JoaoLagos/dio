@@ -17,6 +17,8 @@ def exibeMenu():
 [3] - Extrato
 [4] - Criar novo Cliente
 [5] - Criar Conta Corrente
+[6] - Visualizar Contas
+[7] - Visualizar Usuários
 [0] - Sair""")
     
     print("".center(50,"="))
@@ -49,7 +51,8 @@ def criarUsuario(dic_usuarios):
             "Nome": nome,
             "Data de Nascimento": data_nasc,
             "CPF": CPF,
-            "Endereço": endereco
+            "Endereço": endereco,
+            "Contas": []
         }
         #Insere o dicionario do usuário ao dicionário dos USUÁRIO"S"
         dic_usuarios[CPF] = dic_usuario
@@ -83,6 +86,8 @@ def criarContaCorrente(dic_usuarios, lista_contas_correntes):
             "Número da Conta": qtd_contas+1,
             "CPF": CPF
         }
+
+        dic_usuarios[CPF]["Contas"].append(dic_conta_corrente["Número da Conta"])
 
         lista_contas_correntes.append(dic_conta_corrente)
 
@@ -172,6 +177,33 @@ def extrato(saldo,/,*,lista_extrato):
     print("".center(50,"-"))
     print(f"\033[0;33mSALDO: R${saldo:.2f}\n\033[0m")
 
+def visualizarContas(lista_contas_correntes):
+    print("".center(50,"="))
+    print("CONTAS CORRENTES".center(50," "))
+    for conta in lista_contas_correntes:
+        print("Titular: ", conta["CPF"])
+        print("Agência: ", conta["Agência"])
+        print("Número da Conta: ", conta["Número da Conta"])
+        print("".center(50,"-"))
+    print("".center(50,"="))
+    print("\n")
+
+def visualizarUsuarios(dic_usuarios):
+    print("".center(50,"="))
+    print("USUÁRIOS".center(50," "))
+    for chave in dic_usuarios:
+        print(("Nome: " + dic_usuarios[chave]["Nome"]).center(50," "))
+        print("\nCPF: ", dic_usuarios[chave]["CPF"])
+        print("Data de Nascimento: ", dic_usuarios[chave]["Data de Nascimento"])
+        print("Endereço: ", dic_usuarios[chave]["Endereço"])
+        #print("Contas: ", dic_usuarios[chave]["Contas"])
+        print("Contas: ")
+        for conta in dic_usuarios[chave]["Contas"]:
+            print("\t", conta)
+        print("".center(50,"-"))
+    print("".center(50,"="))
+    print("\n")
+
 ################################################################
 dic_usuarios = {}
 lista_contas_correntes = []
@@ -212,6 +244,10 @@ while True:
     elif opcao == 5:
         criarContaCorrente(dic_usuarios, lista_contas_correntes)
         print(lista_contas_correntes)
+    elif opcao == 6:
+        visualizarContas(lista_contas_correntes)
+    elif opcao == 7:
+        visualizarUsuarios(dic_usuarios)
     elif opcao == 0:
         break 
     else:
