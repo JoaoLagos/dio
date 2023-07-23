@@ -1,4 +1,5 @@
-#TODO: Fiz a OPÇÃO 1 e OPÇÃO 5, falta fazer as demais. 
+#TODO: Fiz a OPÇÃO 1, OPÇÃO 4 e OPÇÃO 5, falta fazer as demais. 
+#TODO: Tirar o criar_cliente de cliente.py e passar para o main.py
 
 from Classes.pessoa_fisica import *
 from Classes.conta_corrente import *
@@ -48,8 +49,13 @@ while True:
     elif opcao == 3:
         pass
     elif opcao == 4:
-        lista_clientes.append(PessoaFisica.criar_cliente())
-        print(lista_clientes)
+        CPF = input("Digite o CPF: ")
+        cliente = busca_CPF(lista_clientes, CPF)
+        if not cliente:
+            lista_clientes.append(PessoaFisica.criar_cliente(CPF))
+            print(lista_clientes)
+        else:
+            print("CPF já cadastrado!")
     elif opcao == 5:
         print("CRIANDO CONTA CORRENTE:")
 
@@ -60,6 +66,8 @@ while True:
             conta_nova = ContaCorrente.criar_conta_corrente(cliente)
             cliente.adicionar_conta(conta_nova)
             print(cliente.contas)
+        else:
+            print("Não é possivel criar uma conta corrente. CPF inexistente!")
     elif opcao == 6:
         pass
     elif opcao == 7:

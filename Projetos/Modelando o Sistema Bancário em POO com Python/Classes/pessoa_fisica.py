@@ -19,9 +19,7 @@ class PessoaFisica(Cliente):
         return self._data_nascimento
 
     @classmethod
-    def criar_cliente(cls):
-        # CPF
-        CPF = input("Digite o CPF do novo usuário: ")
+    def criar_cliente(cls, CPF):
         # Nome
         nome = input("Digite o nome do novo usuário: ")
         # Data de Nascimento
