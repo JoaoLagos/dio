@@ -17,15 +17,4 @@ class PessoaFisica(Cliente):
     @property
     def data_nascimento(self):
         return self._data_nascimento
-
-    @classmethod
-    def criar_cliente(cls, CPF):
-        # Nome
-        nome = input("Digite o nome do novo usuário: ")
-        # Data de Nascimento
-        data_nasc = input("Digite a data de nascimento do novo usuário(FORMATO: dd/mm/aaaa): ")
-        # Endereço
-        endereco = input("Digite o endereço do novo usuário (FORMATO: logradouro,nro-bairro-cidade/siglaEstado): ")
-
-        return cls(endereco, CPF, nome, data_nasc)
     

@@ -24,6 +24,10 @@ class Conta():
         return self._agencia
     
     @property
+    def cliente(self):
+        return self._cliente
+    
+    @property
     def historico(self):
         return self._historico
     
@@ -31,12 +35,12 @@ class Conta():
     def nova_conta(cls, cliente, numero):
         return cls(numero, cliente)
 
+    @abstractmethod # Pois cada tipo de conta (conta corrente, conta poupança) vai ter seus critérios para saque
     def sacar(self, valor):
-        saque = Saque(valor)
-        self.saldo = saque.registrar(self)
+        pass
 
+    @abstractmethod # Pois cada tipo de conta (conta corrente, conta poupança) vai ter seus critérios para deposito
     def depositar(self, valor):
-        deposito = Deposito(valor)
-        self._saldo = deposito.registrar(self)
+        pass
     
 

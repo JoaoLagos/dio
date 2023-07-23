@@ -10,12 +10,5 @@ class Deposito(Transacao):
         return self._valor
 
     def registrar(self, conta):
-
-        if self.valor > 0:
-            saldo = conta.saldo
-            saldo += self.valor
+        if conta.depositar(self.valor):
             conta.historico.adicionar_transacao(self)
-        else:
-            print("\n !!! Insira o valor válido para ser depositado (>0) !!!\n")
-
-        return saldo

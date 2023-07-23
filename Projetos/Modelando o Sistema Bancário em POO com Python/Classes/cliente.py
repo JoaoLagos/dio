@@ -28,7 +28,3 @@ class Cliente:
     def adicionar_conta(self, conta):
         self._contas.append(conta)
         print("Conta corrente adicionada.")
-
-    @abstractmethod
-    def criar_cliente():
-        pass
