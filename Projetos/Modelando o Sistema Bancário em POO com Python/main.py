@@ -1,3 +1,8 @@
+#TODO: Fiz a OPÇÃO 1 e OPÇÃO 5, falta fazer as demais. 
+
+from Classes.pessoa_fisica import *
+from Classes.conta_corrente import *
+
 def exibeMenu():
     """
     Exibe o menu bancário com opções disponíveis e o saldo atual.
@@ -10,7 +15,7 @@ def exibeMenu():
     print(" MENU BANCÁRIO ".center(50," "))
     print ("".center(50,"="))
 
-    print(f"\033[0;33mSALDO: R${saldo:.2f}\n\033[0m")
+    #print(f"\033[0;33mSALDO: R${saldo:.2f}\n\033[0m")
 
     print("""[1] - Depositar
 [2] - Sacar
@@ -23,9 +28,45 @@ def exibeMenu():
     
     print("".center(50,"="))
 
-# Esboço da UML implementado!!!
+def busca_CPF(lista, CPF):
+    for i in range(len(lista)):
+            if CPF == lista[i].CPF:
+                return lista[i]
 
-# Na pasta "Classes" estão as classes, com seus respectivos atributos e métodos
+lista_clientes = []
 
-# Aqui é o corpo principal da aplicação bancária. No momento, há apenas a função exibir menu.
-# AGORA falta implementar a aplicação
+while True:
+    exibeMenu()
+    opcao = int(input("Digite a opção desejada: "))
+    print("".center(50,"="))
+    print("")
+
+    if opcao == 1:
+        pass
+    elif opcao == 2:
+        pass
+    elif opcao == 3:
+        pass
+    elif opcao == 4:
+        lista_clientes.append(PessoaFisica.criar_cliente())
+        print(lista_clientes)
+    elif opcao == 5:
+        print("CRIANDO CONTA CORRENTE:")
+
+        # Busca de CPF
+        CPF = input("Digite o CPF do usuário que deseja criar uma conta corrente: ")
+        cliente = busca_CPF(lista_clientes, CPF)
+        if cliente:
+            conta_nova = ContaCorrente.criar_conta_corrente(cliente)
+            cliente.adicionar_conta(conta_nova)
+            print(cliente.contas)
+    elif opcao == 6:
+        pass
+    elif opcao == 7:
+        pass
+    elif opcao == 0:
+        break
+    else:
+        print("ERRO!!! Opção inválida.\nTente novamente\n")
+        continue
+    

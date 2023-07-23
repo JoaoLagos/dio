@@ -1,5 +1,5 @@
-from deposito import *
-from saque import *
+from Classes.deposito import *
+from Classes.saque import *
 
 class Historico():
     def __init__(self,):
