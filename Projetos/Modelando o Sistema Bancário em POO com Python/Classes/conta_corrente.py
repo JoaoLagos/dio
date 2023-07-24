@@ -20,21 +20,23 @@ class ContaCorrente(Conta):
             elif valor>500: # Se ultrapassou o limite saque
                 print(f"\nERRO!!! Valor de saque ultrapassou o limite máximo diário de R${self._limite_valor:.2f}\n")
             elif valor>self.saldo: # Se valor for maior que o self._saldo
-                print("\nERRO!!! Valor a ser sacado maior que o self._saldo.")
+                print("\nERRO!!! Valor a ser sacado maior que o saldo.")
                 print(f"Valor a ser sacado: R${valor:.2f}.")
-                print(f"self._saldo: R${self.saldo:.2f}.\n")
+                print(f"saldo: R${self.saldo:.2f}.\n")
             else: # Caso ocorra tudo certo
                 self._saldo -= valor
+                print("Saque realizado com sucesso!!!")
                 return True
         
         return False
     
     def depositar(self, valor):
-        if self.valor > 0:
+        if valor > 0:
             self._saldo += valor
+            print("Deposito realizado com sucesso!!!")
             return True
         else:
-            print("\n !!! Insira o valor válido para ser depositado (>0) !!!\n")
+            print("\nDeposito não efetuado !!! Insira o valor válido para ser depositado (>0) !!!\n")
         return False
         
 

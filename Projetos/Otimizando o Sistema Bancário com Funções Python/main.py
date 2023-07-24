@@ -163,7 +163,7 @@ def extrato(saldo,/,*,lista_extrato):
         None
     """
 
-    print("SAQUE".center(50," "))
+    print("EXTRATO".center(50," "))
     print("")
     
     if len(lista_extrato)==0:

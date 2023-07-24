@@ -6,8 +6,4 @@ class Historico():
         self.lista_transacao = []
 
     def adicionar_transacao(self, transacao):
-        
-        if isinstance(transacao, Deposito):
-            self.lista_transacao.append(transacao._valor)
-        elif isinstance(transacao, Saque):
-            self.lista_transacao.append(-transacao._valor)
+        self.lista_transacao.append(transacao)
